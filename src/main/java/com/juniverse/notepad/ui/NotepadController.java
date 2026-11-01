@@ -214,11 +214,6 @@ public final class NotepadController {
         return editor.getText();
     }
 
-    /**
-     * Indica si hay cambios sin guardar.
-     *
-     * @return {@code true} si el texto difiere del último guardado
-     */
     public boolean isDirty() {
         return dirty.get();
     }
@@ -268,20 +263,10 @@ public final class NotepadController {
         return font;
     }
 
-    /**
-     * Indica si el tema oscuro está activo.
-     *
-     * @return {@code true} si es oscuro
-     */
     public boolean isDarkTheme() {
         return darkTheme;
     }
 
-    /**
-     * Indica si la barra de estado está visible.
-     *
-     * @return {@code true} si se muestra
-     */
     public boolean isStatusBarVisible() {
         return root.getBottom() != null;
     }
